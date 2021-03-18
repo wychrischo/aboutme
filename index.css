@@ -1,5 +1,113 @@
+:root {
+  --text-color:
+  --background-color:
+  --accent-color:
+}
+
 head {
   display: none;
+}
+
+body {
+  font-family: "Source Sans Pro";
+  background-color: lightblue;
+  display: block;
+  margin: 0px;
+}
+
+a.navbar {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 8px 12px;
+}
+
+.navbar_logo a {
+  font-size: 24px;
+}
+
+.navbar_logo i {
+  font-size: 24px;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons i {
+  font-size: 20px;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+.navbar_toggleBtn {
+  position: absolute;
+  right: 32px;
+  display: none;
+}
+
+.navbar_toggleBtn i {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toggleBtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
 }
 
 header {
@@ -24,24 +132,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  margin-top: 1cm;
-}
-
-h1 {
-  margin: 0.25cm;
-}
-
-p {
-  margin: 0.25cm;
-}
-
-body {
-  font-family: "Press Start 2P", cursive;
-  background-color: lightblue;
-  display: block;
-  margin: 10px;
-  border: solid whitesmoke;
-  border-radius: 10px;
+  margin-top: 5cm;
 }
 
 .section_1 {
@@ -118,7 +209,7 @@ body {
   justify-content: center;
 }
 
-a {
+.section_5 a {
   color: black;
   text-decoration: none;
 }
