@@ -115,25 +115,44 @@ a.navbar {
   }
 }
 
-.mainImage {
+.header {
   display: flex;
   justify-content: center;
-  margin-top: 3cm;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 2cm;
 }
 
-.footer {
+.priorExp {
+  margin-top: 1cm;
   display: flex;
   justify-content: center;
+  margin-bottom: 5cm;
 }
 
-.last_updated {
-  justify-content: center;
-  text-align: center;
-  margin-top: 3cm;
+.prior_exp_logo_1 img {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+  border: solid white 5px;
+  border-radius: 50%;
 }
 
-.updated_by {
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 1cm;
+.prior_exp_logo_2 img {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+  border: solid white 5px;
+  border-radius: 50%;
+}
+
+.prior_exp_logo_3 img {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+  border: solid white 5px;
+  border-radius: 50%;
 }
